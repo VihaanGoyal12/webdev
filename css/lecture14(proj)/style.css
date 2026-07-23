@@ -46,8 +46,25 @@ a{
 .cards{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
     
+}
+@media (min-width:762px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (min-width:1080px) {
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+   @media (min-width:1450px) {
+    .cards{
+        grid-template-columns: repeat(4,1fr);
+    }
     
 }
 .card_container{
@@ -144,4 +161,36 @@ a{
     background-color: rgb(220, 220, 210);
     padding: 0.25rem 0.25rem;
     margin: 0.5rem;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.75rem 1rem;
+}
+
+.tag{
+    flex-shrink: 0;        /* never let this collapse */
+    white-space: nowrap;
+    margin: 0;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0;
+    min-width: 0;          /* allows author to shrink/truncate instead of tag */
+    overflow: hidden;
+}
+
+.infoauthor{
+    min-width: 0;
+    overflow: hidden;
+}
+
+.name, .date{
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis;   long name/date truncates with "..." instead of squeezing tag */
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            margin: 10px;
+            height: 100px;
+            width: 200px;
+            background-color: navy;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            position: relative;
+            animation-name: moveright;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+
+
+        }
+        @keyframes moveright {
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: 0px;
+                left: 1200px;
+            }
+        }
+        .box2{
+            margin: 10px;
+            height: 100px;
+            width: 200px;
+            background-color: navy;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            position: relative;
+            animation: 5s linear infinite alternate none running leftmove;
+        }
+
+        @keyframes leftmove {
+            from{
+                top: 600px;
+                left: 1200px;
+            }
+            to{
+                top: 600px;
+                left: 0px;
+            }
+        }
+        .circle{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: maroon;
+            border: 2px solid yellow;
+            border-radius: 50px;
+            position: relative;
+            top: 20%;
+            left: 675px;
+            animation: 10s linear infinite alternate none running circlemovement;
+        }
+        @keyframes circlemovement {
+            0%{
+                top: -15%;
+                left: 0px
+            }
+            30%{
+                top: 50%;
+                left: 35%;
+            }
+            60%{
+                top: -15%;
+                left: 75%;
+            }
+            100%{
+                top: 50%;
+                left: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class = "box2"></div>
+        <div class= "circle">
+
+        </div>
+    </div>
+</body>
+</html>

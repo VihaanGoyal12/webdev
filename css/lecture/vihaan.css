@@ -1,0 +1,23 @@
+h1{ 
+    font-size: smaller;
+    text-align: center;
+}
+p,article{
+    width: 200px;
+}
+/* used to small text whether h1 h2 or whatever */
+/* p{
+    background-color: aqua;
+} */
+#article1{
+    background-color: aquamarine;
+}
+ .paraclass{
+    background-color: rgb(109, 36, 143);
+} 
+p.paraclass{
+    color: yellow;
+}
+p{
+    background-color: aqua;
+}

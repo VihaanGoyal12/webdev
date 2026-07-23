@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: black 2px solid
+        
+        }
+        .container{
+            background-color: #46aa46;
+            height: 8000px;
+            
+        }
+        .box{
+            background-color: aquamarine;
+            height: 1000px;
+        }
+        img{
+            margin: 10px;
+        }
+        /*
+         .i2{
+            top: 100px;
+        } 
+        */
+        /* dosnt work as by deffault it is static and cannot be altered therefore use relative */
+        .i2{
+            position: relative;
+            top: 100px;
+        
+        }
+        .i3{
+            position: absolute;
+            top: 100px;
+        }
+        .i4{
+            position: fixed;
+        }
+        .i1{
+            top: 200px;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <img src="img.png" alt="pic1" height="100" class="i1">
+        <img src="img1.png" alt="pic2" height="100" class="i2">
+        <img src="img2.png" alt="pic3" height="100" class="i3">
+        <img src="img3.png" alt="pic4" height="100" class="i4">
+    </div>
+    <div class = "box">
+
+    </div>
+</body>
+</html>

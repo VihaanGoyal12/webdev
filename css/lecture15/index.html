@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            display: grid;
+            gap: 1rem;
+            padding: 4rem;
+            background-color: rgb(65, 59, 59);
+            grid-template-columns: repeat(3,1fr);
+            
+        }
         
+        .item{
+            background-color: purple;
+            border: 5px solid rgb(10, 10, 10);
+            padding: 1rem;
+            
+        }
     </style>
+    
     
 </head>
 <body>

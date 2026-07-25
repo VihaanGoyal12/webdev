@@ -46,10 +46,12 @@ a{
 .cards{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(1,1fr);
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+    justify-content: center;
     
 }
-@media (min-width:762px) {
+/* @media (min-width:762px) {
     .cards{
         grid-template-columns: repeat(2,1fr);
     }
@@ -61,12 +63,12 @@ a{
     }
     
 }
-   @media (min-width:1450px) {
+@media (min-width:1450px) {
     .cards{
         grid-template-columns: repeat(4,1fr);
     }
     
-}
+} */
 .card_container{
     background-color: rgb(220, 195, 150);
     display: flex;

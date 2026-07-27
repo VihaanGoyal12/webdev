@@ -21,6 +21,13 @@
             gap: 1rem;
             padding: 4rem;
             background-color: #484444;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content1 content1"
+                "sidebar content2 content3"
+                "foot foot foot"
+                ;
+
         }
         .items{
             background-color: #9033c2;
@@ -47,7 +54,7 @@
             grid-area: content3;
         }
         #F{
-            grid-area: footer;
+            grid-area: foot;
         }
     </style>
 </head>
@@ -58,7 +65,7 @@
         <div class="items" id="c1">c1</div>
         <div class="items" id="c2">c2</div>
         <div class="items" id="c3">c3</div>
-        <div class="items" id="c4">F</div>
+        <div class="items" id="F">F</div>
         
     </div>
 </body>

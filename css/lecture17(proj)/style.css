@@ -17,3 +17,95 @@
     --gray: #808080;
     --dark-gray: #555;
 }
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 0.3rem;
+}
+.header_content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.logo-icon{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    gap: 0.7rem;
+}
+.logo_image{
+    height: 5.875rem;
+    width: 1.975rem;
+}
+
+.nav{
+    display: none;
+
+    gap: 1.5rem;
+    color: #646d7a;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: color 0.1s;
+}
+@media screen and (min-width:800px ){
+    .nav{
+        display: flex;
+    }
+    
+}
+.nav:hover{
+    color: var(--link-color);
+}
+
+.contact_button{
+    display: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    padding: 0.675rem 1.2rem;
+    color: rgb(255, 238, 238);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1sec;
+    
+}
+@media screen and (min-width:800px ){
+    .contact_button{
+        display: flex;
+    }
+    
+}
+.contact_button:hover{
+    background-color: #5245f8;
+}
+
+.menu_button{
+    display:none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--background-color);
+    padding: 0.5rem 1rem;
+}
+@media screen and (max-width:800px ){
+    .menu_button{
+        display: block;
+    }
+    
+}
+
+
+.menubutton{
+    height: 30px;
+    width: 30px;
+
+    
+}

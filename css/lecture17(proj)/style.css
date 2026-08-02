@@ -181,3 +181,19 @@ body{
 .tour:hover{
     background-color: var(--gray);
 }
+.contentright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_container{
+    border: none;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 57vh;
+}
+.section_image{
+    width: 100%;
+    height: 100%;
+}

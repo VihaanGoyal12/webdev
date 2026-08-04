@@ -241,6 +241,7 @@ body{
     margin: 2rem;
     font-size: 2rem;
     animation: slidefromleft 1s ease-in forwards;
+    /* margin-bottom: 10rem; */
     
 }
 .company_grid{
@@ -253,6 +254,7 @@ body{
     background-color: var(--light-gray);
     border-radius: 10px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 
 }
 .company_logo{
@@ -281,4 +283,99 @@ body{
 .company_title{
     font-size: 2.4rem;
     font-weight: bold;
+}
+
+.cards{
+    background-color: var(--light-gray);
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.feature_content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.main_info{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.info_heading{
+    font-size: 2.25rem;
+}
+
+.info_desc{
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+
+.feature_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 1.5rem;
+
+}
+.card1,.card2,.card3,.card4,.card5,.card6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.card_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 50%;
+
+}
+.feature_info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.card_logo{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.feature_title,.feature_desc{
+    color: white;
+}
+.card1{
+    background-color: #4a90e2;
+}
+.card2{
+    background-color: #ff6289;
+}
+.card3{
+    background-color: #fcbf58;
+}
+.card4{
+    background-color: #44bfc3;
+}
+.card5{
+    background-color: #77b05d;
+}
+.card6{
+    background-color: #7b78b1;
+}
+.feature_title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+@media screen and (max-width:800px) {
+    .feature_grid{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0,2rem;
+    }
 }

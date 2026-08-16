@@ -15,3 +15,23 @@
     
 // }
 // printNum(5);
+
+
+//METHOD1
+// function greet(name){
+//     console.log(name);
+// }
+// console.log(greet("vihaan"));
+
+//METHOD2
+// let greet = function(name){
+//     console.log(name);
+// }
+// console.log(greet("vihaan"));
+
+//METHOD3
+// let greet =  (name) =>{
+//     console.log(name);
+// }
+// console.log(greet("vihaan"));
+

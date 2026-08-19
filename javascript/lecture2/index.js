@@ -35,3 +35,5 @@
 // }
 // console.log(greet("vihaan"));
 
+
+// java/cpp vgera are strongly typed language, js is loosely typed
